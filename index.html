@@ -3,22 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>mis audios</title>
+  <title>recursos</title>
   <style>
     body { font-family: system-ui, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; padding: 0 16px; }
     h1, h2 { margin-bottom: 0.5em; }
-    .audio-item { margin-bottom: 24px; }
+    .audio-item, .pdf-item { margin-bottom: 24px; }
     audio { width: 100%; margin-top: 8px; }
+    a.pdf-link { text-decoration: none; font-weight: 600; color: #0056b3; }
+    a.pdf-link:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <header>
-    <h1>mis audios</h1>
-    <p>Aquí puedes escuchar directamente los archivos de audio y ver las partituras creadas con Mirage-phi.</p>
+    <h1>recursos disponibles</h1>
+    <p>Aquí puedes escuchar los audios o descargar los archivos PDF.</p>
   </header>
 
   <section>
-    <h2>lista de reproducción</h2>
+    <h2>🎵 audios</h2>
     <div class="audio-item">
       <strong>For the dead mothers</strong>
       <audio controls>
@@ -89,3 +91,65 @@
         Tu navegador no soporta el elemento de audio.
       </audio>
     </div>
+    <div class="audio-item">
+      <strong>TU YA NO ESCUCHAS VERDAD - b</strong>
+      <audio controls>
+        <source src="audio/TU YA NO ESCUCHAS VERDAD - b.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+    <div class="audio-item">
+      <strong>TU YA NO ESCUCHAS VERDAD</strong>
+      <audio controls>
+        <source src="audio/TU YA NO ESCUCHAS VERDAD.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+    <div class="audio-item">
+      <strong>Lead Sheet 2</strong>
+      <audio controls>
+        <source src="audio/Lead Sheet 2.wav" type="audio/x-wav">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+
+  </section>
+  <section>
+    <h2>📄 documentos PDF</h2>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/For the dead mothers.pdf" target="_blank">For the dead mothers.pdf</a>
+    </div>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/Inspired on Vivaldi.pdf" target="_blank">Inspired on Vivaldi.pdf</a>
+    </div>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/Lacryma.pdf" target="_blank">Lacryma.pdf</a>
+    </div>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/Little Piano Solo.pdf" target="_blank">Little Piano Solo.pdf</a>
+    </div>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/Lyric Pieces.pdf" target="_blank">Lyric Pieces.pdf</a>
+    </div>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/Para John Coltrane.pdf" target="_blank">Para John Coltrane.pdf</a>
+    </div>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/Something From Monk.pdf" target="_blank">Something From Monk.pdf</a>
+    </div>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/Soneto 15.pdf" target="_blank">Soneto 15.pdf</a>
+    </div>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/String Solo.pdf" target="_blank">String Solo.pdf</a>
+    </div>
+    <div class="pdf-item">
+      <a class="pdf-link" href="sheets/TU YA NO ESCUCHAS VERDAD.pdf" target="_blank">TU YA NO ESCUCHAS VERDAD.pdf</a>
+    </div>
+  </section>
+
+  <footer style="margin-top:40px;color:#666;font-size:0.9rem">
+    <p>sitio publicado con GitHub Pages</p>
+  </footer>
+</body>
+</html>
