@@ -3,37 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>mis archivos</title>
+  <title>audios para escuchar</title>
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; max-width: 900px; margin: 40px auto; line-height:1.6; padding: 0 16px; }
-    header { margin-bottom: 28px; }
-    .file-list { list-style: none; padding: 0; }
-    .file-list li { margin: 10px 0; }
-    .meta { color: #555; font-size: 0.9rem; }
-    a.download { text-decoration: none; font-weight: 600; }
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; padding: 0 16px; }
+    h1, h2 { margin-bottom: 0.5em; }
+    .audio-item { margin-bottom: 24px; }
+    audio { width: 100%; margin-top: 8px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>mis archivos</h1>
-    <p>Bienvenid@, aquí encontrarás los archivos disponibles para descargar.</p>
+    <h1>mis audios</h1>
+    <p>Aquí puedes escuchar directamente los archivos de audio.</p>
   </header>
 
   <section>
-    <h2>descargas</h2>
-    <ul class="file-list">
-      <!-- Ejemplo: sube los archivos a la carpeta "files" y pon aquí los enlaces -->
-      <li>
-        <a class="download" href="/mis-archivos-web/files/ejemplo.pdf" target="_blank" download>ejemplo.pdf</a>
-        <div class="meta">PDF con instrucciones — 1.2 MB</div>
-      </li>
-      <li>
-        <a class="download" href="/mis-archivos-web/files/manual.zip" target="_blank" download>manual.zip</a>
-        <div class="meta">Paquete con recursos — 4.5 MB</div>
-      </li>
-      <!-- añade más <li> según necesites -->
-    </ul>
-    <p>Si subes más archivos, simplemente añade nuevas entradas aquí o crea una pequeña página de índice automática desde tu script local.</p>
+    <h2>lista de reproducción</h2>
+
+    <div class="audio-item">
+      <strong>Canción 1</strong>
+      <audio controls>
+        <source src="/mis-archivos-web/audios/cancion1.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+
+    <div class="audio-item">
+      <strong>Canción 2</strong>
+      <audio controls>
+        <source src="/mis-archivos-web/audios/cancion2.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="audio-item">
+      <strong>Voz de introducción</strong>
+      <audio controls>
+        <source src="/mis-archivos-web/audios/voz_intro.ogg" type="audio/ogg">
+      </audio>
+    </div>
+
   </section>
 
   <footer style="margin-top:40px;color:#666;font-size:0.9rem">
